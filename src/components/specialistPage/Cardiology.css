@@ -1,0 +1,212 @@
+.cardiology-page {
+  padding: 30px;
+  background: #f4f8fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+.cardiology-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cardiology-hero h1 {
+  font-size: 38px;
+  color: #075985;
+  margin-bottom: 15px;
+}
+
+.cardiology-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.cardiology-hero img {
+  width: 350px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cardio-hero-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 22px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cardio-hero-btn:hover {
+  background: #0369a1;
+  transform: translateY(-3px);
+}
+
+.cardio-info-section,
+.cardio-services-section,
+.cardio-symptoms-section,
+.cardio-doctor-section {
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.07);
+}
+
+.cardio-info-section h2,
+.cardio-services-section h2,
+.cardio-symptoms-section h2,
+.cardio-doctor-section h2 {
+  color: #075985;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.cardio-info-section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.cardio-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.cardio-service-card {
+  background: #e0f2fe;
+  color: #075985;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cardio-service-card:hover {
+  background: #bae6fd;
+  transform: translateY(-5px);
+}
+
+.cardio-symptoms-section ul {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.cardio-symptoms-section li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.cardio-doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.cardio-doctor-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cardio-doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.cardio-doctor-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.cardio-doctor-card h3 {
+  color: #111827;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.cardio-doctor-card h4 {
+  color: #0284c7;
+  margin-bottom: 8px;
+}
+
+.cardio-experience {
+  font-weight: bold;
+  color: #374151;
+}
+
+.cardio-doctor-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cardio-doctor-card button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: none;
+  background: #0284c7;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardio-doctor-card button:hover {
+  background: #0369a1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .cardiology-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardiology-hero img {
+    width: 100%;
+  }
+
+  .cardio-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardio-doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardio-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardiology-page {
+    padding: 15px;
+  }
+
+  .cardiology-hero h1 {
+    font-size: 30px;
+  }
+}

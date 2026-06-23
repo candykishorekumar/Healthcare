@@ -1,0 +1,465 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f4f8fb;
+}
+
+/* Navbar */
+.nav-container {
+  width: 100%;
+  height: 60px;
+  background-color: #0284c7;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+.admin{
+  display: flex;
+  margin-left: -300px;
+  text-decoration: none;
+  color: #f1f2f4;
+  padding: 7px;
+}
+
+.admin:hover{
+  opacity: 0.6;
+}
+.menu-btn {
+  width: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.company-name {
+  
+  width: auto;
+  white-space: nowrap;
+}
+
+
+.search {
+  display: flex;
+  flex: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+ margin-left: 100px;
+}
+
+.search-input {
+  width: 100%px;
+}
+
+.datetime {
+  border: 3px solid white;
+  border-radius: 8px;
+  width: auto;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  width: 250px;
+  height: calc(100vh - 60px);
+
+  background-color: #374151;
+  color: white;
+
+  transition: left 0.3s ease;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #4b5563;
+}
+
+.side{
+  text-decoration: none;
+  color: #f4f8fb;
+}
+
+.q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  margin-bottom: 5px;   /* Reduce gap */
+}
+.d{
+  margin-left: 140px;
+}
+
+.f{
+  margin-right: 200px;
+
+}
+
+.dashboard-calendar {
+  background: rgba(255, 255, 255, 0.947);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: right;
+  display: flex;
+}
+
+.appointment-date {
+  background: #0284c7 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+
+.dashboard-cards {
+  display: grid;
+  gap: 20px;
+  padding: 0 30px 30px 30px;  /* Top padding = 0 */
+  margin-top: 0;
+}
+
+.card {
+  background: #1f2937;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 30px;
+  width: 45%;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.card-middle {
+  display: inline-block;
+  margin-top: 2px;
+  margin-right: 300px;
+  padding: 9px 10px;
+  background: #02c70f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s
+  ;
+}
+.card-middle:hover{
+  transform: translateY(-10px);
+  opacity: 0.7;
+  background-color: #0284c7;
+}
+
+.card-middle1 {
+  text-decoration: none;
+
+}
+
+.barchart {
+
+  padding: 0;
+  margin-right: 30px;
+}
+
+.piechart {
+  padding: 0;
+  margin-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 400px;
+  background: #1f2937;
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.show-password {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.forgot-password {
+  margin-top: 20px;
+  text-align: center;
+  color: #93c5fd;
+  cursor: pointer;
+}
+
+.human-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.human-image {
+  width: 180px;
+  height: auto;
+}
+
+.human-title {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+
+.cards-calendar-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0 30px 30px 30px;
+}
+
+.cards-calendar-row .dashboard-cards {
+  width: 45%;
+  padding: 0;
+}
+
+.cards-calendar-row .card {
+  width: 100%;
+  
+}
+
+.cards-calendar-row {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;   /* Makes both columns same height */
+}
+
+.dashboard-cards {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-calendar {
+  width: 55%;
+  background: rgba(255, 255, 255, 0.947);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+
+  /* This makes calendar equal to card section height */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.appointment-text,.dashboard-calendar h2{
+  color: #0f172a ;
+}
+/* Increase each date box */
+.react-calendar__tile {
+  height: 55px !important;   /* Increase from 70px to 85px */
+  font-size: 18px;           /* Larger date number */
+  font-weight: 600;
+}
+
+/* Increase weekday names (Mon, Tue...) */
+.react-calendar__month-view__weekdays {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Increase month navigation (June 2026 and arrows) */
+.react-calendar__navigation {
+  height: 30px;
+}
+
+.react-calendar__navigation button {
+  font-size: 20px;
+}
+
+.dashboard-calendar {
+  width: 55%;
+  background: rgba(255, 255, 255, 0.947);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-calendar h2 {
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calendar-details-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+
+.react-calendar {
+  width: 420px !important;
+  max-width: 420px !important;
+}
+
+.react-calendar__tile {
+  height: 50px !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.react-calendar__month-view__days__day {
+  color: #0f172a;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: red;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #6b7280 !important;
+}
+
+.react-calendar__navigation {
+  height: 40px;
+}
+
+.react-calendar__navigation button {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.appointment-date {
+  background: #0284c7 !important;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.booking-info-box {
+  width: 260px;
+  background: #e0f2fe;
+  padding: 18px;
+  border-radius: 14px;
+  color: #0f172a;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.booking-info-box h3 {
+  color: #075985;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.booking-info-box p {
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+@media (max-width: 900px) {
+  .calendar-details-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-info-box {
+    width: 100%;
+  }
+}

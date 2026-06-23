@@ -1,0 +1,63 @@
+.customer-page {
+  min-height: 100vh;
+  background: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.customer-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.customer-card h1 {
+  text-align: center;
+  color: #075985;
+  margin-bottom: 20px;
+}
+.c{
+    font-size: 40px;
+}
+
+.customer-card input,
+.customer-card textarea,
+.customer-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f4f8fb;
+  color: black;
+}
+
+.customer-card textarea {
+  height: 90px;
+  resize: none;
+}
+
+.customer-card h2 {
+  color: #075985;
+  margin-bottom: 20px;
+}
+
+.customer-card button {
+  width: 100%;
+  padding: 13px;
+  background: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.customer-card button:hover {
+  background: #0369a1;
+}

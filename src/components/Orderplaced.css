@@ -1,0 +1,77 @@
+.order-page {
+  min-height: 100vh;
+  background: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.order-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.order-card h1 {
+  text-align: center;
+  color: #16a34a;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.order-card h3 {
+  color: #075985;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  border-bottom: 2px solid #e0f2fe;
+  padding-bottom: 8px;
+}
+
+.order-card p {
+  color: #1f2937;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.order-card b {
+  color: #0f172a;
+}
+
+.continue-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 12px 22px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  background: #0369a1;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 500px) {
+  .order-card {
+    padding: 25px;
+  }
+
+  .order-card h1 {
+    font-size: 26px;
+  }
+
+  .order-card h3 {
+    font-size: 20px;
+  }
+}

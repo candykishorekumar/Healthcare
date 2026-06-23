@@ -1,0 +1,152 @@
+.admin-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f8fb;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-page h1 {
+  text-align: center;
+  color: #0284c7;
+  margin-bottom: 30px;
+}
+
+.Add {
+  margin-top: -400px;
+  padding: 2%;
+  text-align: center;
+  display: flex;
+
+}
+
+.admin-section {
+  background: rgb(243, 241, 241);
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-left: 250px;
+  
+}
+
+.admin-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-form {
+  display: grid;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgb(245, 244, 244);
+  
+}
+
+.product-form textarea {
+  resize: none;
+  height: 90px;
+}
+.A{
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  margin-left: 90px;
+}
+
+.product-form button,
+.product-card button {
+  padding: 12px;
+  background: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-form button:hover,
+.product-card button:hover {
+  background: #0369a1;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  color: #111827;
+}
+
+.product-card p {
+  margin: 6px 0;
+}
+
+.delete-btn {
+  background: #dc2626 !important;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background: #b91c1c !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #0284c7;
+  color: white;
+}
+
+td select {
+  padding: 8px;
+  border-radius: 6px;
+}
+.H{
+color: black;
+}

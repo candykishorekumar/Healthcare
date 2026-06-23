@@ -1,0 +1,82 @@
+.appointment-page {
+  padding: 30px;
+  background: #f4f8fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment-card {
+  width: 100%;
+  max-width: 850px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-card h2 {
+  text-align: center;
+  color: #075985;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.appointment-card form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.appointment-card input,
+.appointment-card textarea,
+.appointment-card select {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+  color: #1f2937;
+  box-sizing: border-box;
+}
+
+.appointment-card input:focus,
+.appointment-card textarea:focus,
+.appointment-card select:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+}
+
+.appointment-card textarea {
+  grid-column: 1 / -1;
+  min-height: 90px;
+  resize: vertical;
+}
+
+.appointment-card button {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  background: #0284c7;
+  color: white;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.appointment-card button:hover {
+  background: #0369a1;
+}
+
+@media (max-width: 768px) {
+  .appointment-card form {
+    grid-template-columns: 1fr;
+  }
+}
